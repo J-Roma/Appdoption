@@ -27,6 +27,30 @@ module.exports = {
           useShortDoctype: true
         }
       }),
+      new HTMLWebpackPlugin({
+        filename: 'index2.html',
+        template: './src/index2.html',
+        minify: {
+          collapseWhitespace: true,
+          removeComments: true,
+          removeRedundantAttributes: true,
+          removeScriptTypeAttributes: true,
+          removeStyleLinkTypeAttributes: true,
+          useShortDoctype: true
+        }
+      }),
+      new HTMLWebpackPlugin({
+        filename: 'index3.html',
+        template: './src/index3.html',
+        minify: {
+          collapseWhitespace: true,
+          removeComments: true,
+          removeRedundantAttributes: true,
+          removeScriptTypeAttributes: true,
+          removeStyleLinkTypeAttributes: true,
+          useShortDoctype: true
+        }
+      }),
       new MiniCssExtractPlugin({
         filename: 'css/app.bundle.css'
     })
