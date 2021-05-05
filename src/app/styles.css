@@ -3,29 +3,8 @@
     font-family: 'Nunito', sans-serif;
 }
 
-body{
+body {
     background-color: #FEC7D7;
-    padding: 10%;
-}
-.imagen{
-    width: auto;
-    height: auto;
-    transition: ls;
-}
-
-.imagen:hover {
-    transform: scale(5);
-}
-
-@media (max-width: 524px){
-    body{
-        padding: 30%;
-    }
-    
-    .imagen:hover {
-        transform: scale(2);
-    }
-
 }
 
 #inicial {
@@ -119,7 +98,11 @@ body{
 }
 
 @media (min-width: 576px) {
-
+    #pruebas {
+        display: flex;
+        align-items: center;
+        padding: auto;
+    }
 }
 
 @media (min-width: 768px) {
@@ -135,6 +118,7 @@ body{
     #pruebas {
         display: flex;
         align-items: center;
+        padding-top: 200px;
     }
     #test, #chat {
         width: 40%;
